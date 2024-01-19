@@ -1,4 +1,4 @@
-I made this Image gallery to practice CSS and get better understanding of JavaScript topics like the DOM manipulation and eventlisteners. <br>
+I made this [Image gallery](https://amandhiran.github.io/Galleria--Pallette.supply-inspired-image-gallery-/) to practice CSS and get better understanding of JavaScript topics like the DOM manipulation and eventlisteners. <br>
 
 
 
