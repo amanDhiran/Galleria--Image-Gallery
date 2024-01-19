@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    color: white;
+    display: grid;
+    place-items: center;
+    top: 0px;
+    transition: all ease 0.4s;
+    opacity: 1;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: -1;
+    color: black;
+    display: grid;
+    place-items: center;
+    top: 0px;
+    transition: all ease 0.3s;
+    opacity: 1;
+}
+
+.gallery{
+    height: 140vmax;
+    width: 140vmax;
+    /* background-color: whitesmoke; */
+    position: relative;
+    z-index: 2;
+}
+
+.tile{
+    height: 2vh;
+    width: 2vh;
+    transition: transform 800ms ease;
+    position: absolute;
+    border-radius: 2vh;
+}
+.tile > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    border-radius: inherit;
+    transition: opacity 800ms ease,
+    transform 800ms ease;
+}
+
+.tile:hover{
+    transform: scale(1.1);
+}
+
+.tile:hover > img{
+    transform: scale(1.01);
+    opacity: 1;
+}
+
+.tile:nth-child(1){
+    height: 18%;
+    width: 16%;
+    top: 61%;
+    left: 49%;
+
+    background-color: rgb(243, 158, 0);
+}
+
+.tile:nth-child(2){
+    height: 18%;
+    width: 19%;
+    top: 43%;
+    left: 13%;
+    background-color: rgb(40, 202, 94);
+}
+.tile:nth-child(3){
+    height: 11%;
+    width: 11%;
+    bottom: 5%;
+    right: 10%;
+    background-color: rgb(239, 239, 66);
+}
+.tile:nth-child(4){
+    height: 19%;
+    width: 16%;
+    bottom: 9%;
+    left: 15%;
+    background-color: rgb(231, 58, 58);
+}
+
+.tile:nth-child(5){
+    height: 13%;
+    width: 19%;
+    top: 35%;
+    left: 45%;
+    background-color: rgb(207, 32, 216);
+}
+
+.tile:nth-child(6){
+    height: 16%;
+    width: 12%;
+    top: 47%;
+    right: 8%;
+    background-color: rgb(195, 195, 254);
+}
+
+.tile:nth-child(7){
+    height: 13%;
+    width: 16%;
+    top: 16%;
+    left: 9%;
+    background-color: #ea9292;
+
+}
+
+.tile:nth-child(8){
+    height: 18%;
+    width: 16%;
+    top: 10%;
+    right: 48%;
+    background-color: rgb(93, 62, 205);
+    
+}
+.tile:nth-child(8) > img{
+    object-position: 0 -48px;
+}
+
+.tile:nth-child(9){
+    height: 8%;
+    width: 14%;
+    top: 28%;
+    right: 2%;
+    background-color: rgb(236, 0, 137);
+
+}
+
+.tile:nth-child(10){
+    height: 15%;
+    width: 19%;
+    top: 5%;
+    right: 11%;
+    background-color: rgb(18, 204, 224);
+}
+
+.tile:nth-child(10) > img{
+    object-position: 0 -120px;
+}
